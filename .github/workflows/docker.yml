@@ -25,5 +25,7 @@ jobs:
           chmod +x ./build.sh
           ./build.sh
         shell: bash
+      - name: image rename
+        run: docker tag vyos:1.5-rolling-202404141045 adenohitu/vyos:1.5-rolling-202404141045
       - name: push DockerHub
         run: docker push adenohitu/vyos
