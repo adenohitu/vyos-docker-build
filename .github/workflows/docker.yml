@@ -24,6 +24,6 @@ jobs:
         run: |
           chmod +x ./build.sh
           ./build.sh
-      shell: bash
+        shell: bash
       - name: push DockerHub
         run: docker push adenohitu/vyos
