@@ -21,9 +21,9 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
       - name: Run script file
-      run: |
-         chmod +x ./build.sh
-         ./build.sh
+        run: |
+          chmod +x ./build.sh
+          ./build.sh
       shell: bash
       - name: push DockerHub
         run: docker push adenohitu/vyos
